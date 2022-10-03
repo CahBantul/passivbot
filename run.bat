@@ -13,7 +13,7 @@ for %%f in (MATICUSDT,GMTUSDT,CHZUSDT,TRBUSDT,SANDUSDT) do (
 set lastindex=!i!
 
 for /L %%f in (0,1,!lastindex!) do ( 
-  start /min python passivbot.py binance_01 !coin[%%f]! configs/live/!coin[%%f]!.json
+  start  python passivbot.py binance_01 !coin[%%f]! configs/live/!coin[%%f]!.json
 )
 
 
